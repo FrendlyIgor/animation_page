@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script src="libs/gsap/gsap.min.js" defer></script>
     <script src="libs/swiper/swiper-bundle.min.js" defer></script>
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
 
@@ -12,19 +13,26 @@
     <script src="js/app.js" defer></script>
 </head>
 <body>
+    <header class="header"><!--top-line-->
+        <div class="container container-top">
+            <div class="header__inner-logo"><!-- simple - div-->
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Logo">
+                </div>
+            </div>
+            <div class="header__inner-main-menu"><!--simple div-->
+                <ul class="main-menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
     <div class="swiper slider">
-
         <div class="swiper-wrapper">
-
-            <div class="swiper-slide slide">
-                <div class="slide__content">
-                    <h2>Abstract</h2>
-                    <p>Designing for the future</p>
-                    <button>Join Us</button>
-                </div>
-            </div>
-
             <div class="swiper-slide slide">
                 <div class="slide__content">
                     <h2>Abstract</h2>
@@ -34,18 +42,31 @@
             </div>
             <div class="swiper-slide slide">
                 <div class="slide__content">
-                    <h2>Abstract</h2>
+                    <h2>Design</h2>
+                    <p>Designing for the future</p>
+                    <button>Join Us</button>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="slide__content">
+                    <h2>Future</h2>
+                    <p>Designing for the future</p>
+                    <button>Join Us</button>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="slide__content">
+                    <h2>Forever</h2>
                     <p>Designing for the future</p>
                     <button>Join Us</button>
                 </div>
             </div>
 
         </div>
+        
         <div class="slider-bottom">
             <div class="slider-pagination">
-                <div class="swiper-pagination">
-
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
             <div class="slider-navigation">
                 <div class="swiper-button-prev"></div>
@@ -53,6 +74,7 @@
             </div>
         </div>
     </div>
+    <video src="media/background.mp4" class="video-background" muted></video>
 
 </body>
 </html>
